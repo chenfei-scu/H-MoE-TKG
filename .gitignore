@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+outputs/*
+!outputs/.gitkeep
+data/*/processed/
+data/*/semantic_cache.pt
+*.pt
+*.npy
+

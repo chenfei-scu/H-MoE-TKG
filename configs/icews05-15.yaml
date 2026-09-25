@@ -1,0 +1,6 @@
+data:
+  data_dir: data/ICEWS05-15/processed
+  semantic_cache: data/ICEWS05-15/semantic_cache.pt
+training:
+  output_dir: outputs/icews05-15
+

@@ -1,0 +1,20 @@
+name: hmoe-tkg
+channels:
+  - pytorch
+  - nvidia
+  - dglteam
+  - conda-forge
+dependencies:
+  - python=3.10.13
+  - pytorch=2.1.2
+  - pytorch-cuda=12.1
+  - dgl=1.1.3
+  - numpy=1.26.4
+  - scipy=1.11.4
+  - scikit-learn=1.3.2
+  - pyyaml=6.0.2
+  - matplotlib=3.8.2
+  - pip
+  - pip:
+      - transformers==4.35.2
+      - umap-learn==0.5.5

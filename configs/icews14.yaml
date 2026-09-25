@@ -1,0 +1,37 @@
+data:
+  data_dir: data/ICEWS14/processed
+  semantic_cache: data/ICEWS14/semantic_cache.pt
+  allow_missing_semantics: false
+  semantic_dim: 768
+  graph_snapshots: 4
+  neighbors_per_relation: 10
+  sequence_length: 20
+  recency_tau: 30.0
+model:
+  embedding_dim: 200
+  dropout: 0.2
+  graph_layers: 2
+  graph_bases: 8
+  structural_backend: dgl
+  transformer_layers: 2
+  transformer_heads: 4
+  semantic_hidden_dim: 256
+  router_hidden_dim: 128
+  router_temperature: 1.0
+training:
+  batch_size: 512
+  eval_batch_size: 256
+  max_epochs: 200
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  label_smoothing: 0.1
+  lambda_diversity: 0.05
+  lambda_routing: 0.01
+  routing_gamma: 1.0
+  gradient_clip: 1.0
+  patience: 10
+  minimum_improvement: 0.0001
+  num_workers: 0
+  device: auto
+  output_dir: outputs/icews14
+
